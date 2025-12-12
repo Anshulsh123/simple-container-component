@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', function() {
     function applyStyling(styling) {
         if (!styling) return;
         
+        // Ensure background is transparent
+        container.style.background = 'transparent';
+        
         if (styling.borderColor) {
             container.style.borderColor = styling.borderColor;
         }
